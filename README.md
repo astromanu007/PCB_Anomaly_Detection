@@ -36,6 +36,9 @@ cd build
 cmake ..
 make
 ```
+### INSTALL FLASK FOR INTERFACE
+pip install Flask
+
 
 ### Step 3: Clone the Project Repository
 Clone the project repository from GitHub:
