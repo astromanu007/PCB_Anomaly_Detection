@@ -1,7 +1,4 @@
-# PCB_Anomaly_Detection
-Sure, here's a detailed `README.md` file for your PCB fault detection project using infrared images and a camera.
 
-```markdown
 # PCB Fault Detection Using Infrared Images and Camera
 
 ## Project Description
@@ -40,8 +37,17 @@ cmake ..
 make
 ```
 
-### Step 3: Create the Python Script
-Create a Python script (e.g., `pcb_fault_detection.py`) :
+### Step 3: Clone the Project Repository
+Clone the project repository from GitHub:
+
+```bash
+git clone https://github.com/astromanu007/PCB_Anomaly_Detection.git
+cd PCB_Anomaly_Detection
+```
+
+### Step 4: Create the Python Script
+Create a Python script (e.g., `pcb_fault_detection.py`) and paste the code:
+
 
 ## Running the Project
 1. Ensure your hardware is correctly set up and connected.
@@ -68,10 +74,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 - FLIR Systems for the Lepton camera module.
 - OpenCV community for the image processing library.
 - GroupGets for the Lepton SDK and hardware interface support.
-
-## Contact
-For any queries or support, please contact manishdhatrak1121@gmail.com.
-
-```
-
-Save this as `README.md` in your project directory. This file provides a comprehensive guide for setting up, running, and customizing the PCB fault detection system using infrared images and a camera.
+- [PCB Anomaly Detection GitHub Repository](https://github.com/astromanu007/PCB_Anomaly_Detection) for additional resources and code examples.
