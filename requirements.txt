@@ -6,3 +6,4 @@ keras
 pandas
 matplotlib
 Pillow
+pygame
