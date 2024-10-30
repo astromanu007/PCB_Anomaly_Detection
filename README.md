@@ -1,80 +1,63 @@
+# 🌡️🔍 **PCB Thermal Anomaly Detection System** 🔍🌡️
 
-# PCB Fault Detection Using Infrared Images and Camera
+<p align="center">
+  <img src="images/thermal_icon.png" width="100" height="100">
+</p>
 
-## Project Description
-This project aims to detect faults on a printed circuit board (PCB) by using an infrared (IR) camera to capture thermal images. The system identifies overheated components on the PCB by applying image processing techniques and highlights these faulty components with colored rectangles.
+Welcome to the **PCB Thermal Anomaly Detection System**! This project allows for real-time thermal imaging analysis of printed circuit boards, highlighting hotspots and saving captured images to help streamline manufacturing efficiency by identifying overheated components with precision. 🚀
 
-## Components Needed
-- **FLIR Lepton 3.5 Thermal Camera Module**
-- **PureThermal 2 Board** (Interface board for the Lepton module)
-- **Raspberry Pi** (Any model with USB interface, e.g., Raspberry Pi 4)
-- **Python 3** installed on your Raspberry Pi
-- **Dependencies**: OpenCV, NumPy, Lepton SDK
+---
 
-## Hardware Setup
-1. Attach the FLIR Lepton 3.5 module to the PureThermal 2 board.
-2. Connect the PureThermal 2 board to the Raspberry Pi via USB.
+## 📖 **Features** 📖
 
-## Software Setup
-### Step 1: Update and Install Dependencies
-Open a terminal on your Raspberry Pi and run the following commands:
+- **Real-Time Anomaly Detection**: Automatically highlights overheating areas on PCBs with visual markers. 🔴🟡
+- **Customizable Temperature Thresholds**: Adjust and monitor threshold settings for precise control over what qualifies as a ‘hot spot’. 🔥
+- **Automatic Snapshot & Storage**: Captures and saves images of detected anomalies in a dedicated folder. 🖼️
+- **User Interface**: A modern, responsive Pygame interface with interactive animations and sleek design. 🖥️✨
+- **Accuracy and Intensity Graphs**: View live accuracy and thermal intensity metrics for consistent monitoring! 📈📊
 
-```bash
-sudo apt-get update
-sudo apt-get install cmake libjpeg-dev python3-pip
-pip3 install opencv-python numpy
-```
+---
 
-### Step 2: Install Lepton SDK
-Clone the Lepton SDK repository and build it:
+## 🖼️ **Screenshots** 🖼️
 
-```bash
-git clone https://github.com/groupgets/LeptonModule.git
-cd LeptonModule/software/raspberrypi_libs/leptonSDKEmb32PUB
-mkdir build
-cd build
-cmake ..
-make
-```
-### INSTALL FLASK FOR INTERFACE
-pip install Flask
+### Main Interface
+![Main Interface](images/MAIN.jpg)
 
+### Welcome Screen
+![Welcome Screen](images/INTRO.png)
 
-### Step 3: Clone the Project Repository
-Clone the project repository from GitHub:
+### Real-Time Thermal Video Mode
+![Real-Time Video Mode](images/VIDEO_MODE.png)
 
-```bash
-git clone https://github.com/astromanu007/PCB_Anomaly_Detection.git
-cd PCB_Anomaly_Detection
-```
+### Thermal Tracking Results
+![Thermal Tracking Results](images/LIVE_TRACKING_RESULTS.png)
 
-### Step 4: Create the Python Script
-Create a Python script (e.g., `pcb_fault_detection.py`) and paste the code:
+### Detection Accuracy and Intensity Graphs
+![Graphs](images/GRAPHS.jpg)
 
+---
 
-## Running the Project
-1. Ensure your hardware is correctly set up and connected.
-2. Run the Python script:
+## 🚀 **Getting Started** 🚀
 
-```bash
-python3 pcb_fault_detection.py
-```
+### 🧩 Prerequisites 🧩
 
-## Explanation
-1. **capture_thermal_image**: Captures a thermal image using the Lepton camera.
-2. **detect_overheated_component**: Detects overheated components by applying a threshold to the image.
-3. **mark_faulty_components**: Converts the grayscale image to a BGR (color) image and draws red rectangles around the detected faulty components.
-4. **main**: Orchestrates the image capture, processing, and display.
+- **Python**: Ensure Python 3.6+ is installed 🐍.
+- **Dependencies**:
+  - Install required packages via `pip`:
+    ```bash
+    pip install numpy opencv-python pygame matplotlib
+    ```
+- **USB Thermal Camera**: Compatible with FLIR or Seek Thermal, connected via USB. 🔌📷
 
-## Customization
-- **Threshold Value**: Adjust the threshold value in the `main()` function to suit your specific needs and the thermal characteristics of your PCB.
-- **Color of Rectangles**: Change the color of the rectangles in the `mark_faulty_components()` function by modifying the `(0, 0, 255)` tuple to another BGR color code.
+---
 
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
+### 📂 **Setup Instructions** 📂
 
-## Acknowledgements
-- FLIR Systems for the Lepton camera module.
-- OpenCV community for the image processing library.
-- GroupGets for the Lepton SDK and hardware interface support.
-- [PCB Anomaly Detection GitHub Repository](https://github.com/astromanu007/PCB_Anomaly_Detection) for additional resources and code examples.
+1. **Clone the Repository** 📂:
+    ```bash
+    git clone https://github.com/astromanu007/PCB_Anomaly_Detection.git
+    cd PCB_Anomaly_Detection
+    ```
+
+2. **Project Structure** 📁:
+   - Ensure the following file structure is set up:
