@@ -1,9 +1,5 @@
 # 🌡️🔍 **PCB Thermal Anomaly Detection System** 🔍🌡️
 
-<p align="center">
-  <img src="images/thermal_icon.png" width="100" height="100">
-</p>
-
 Welcome to the **PCB Thermal Anomaly Detection System**! This project allows for real-time thermal imaging analysis of printed circuit boards, highlighting hotspots and saving captured images to help streamline manufacturing efficiency by identifying overheated components with precision. 🚀
 
 ---
