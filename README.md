@@ -40,6 +40,7 @@ Welcome to the **PCB Thermal Anomaly Detection System**! This project allows for
 - **Python**: Ensure Python 3.6+ is installed 🐍.
 - **Dependencies**:
   - Install required packages via `pip`:
+  - Or you can instal by running the requirements.txt file
     ```bash
     pip install numpy opencv-python pygame matplotlib
     ```
@@ -70,4 +71,57 @@ PCB_Anomaly_Detection/
 │   └── GRAPHS.jpg
 ├── main.py                     # Main application code for running the PCB Thermal Anomaly Detection System
 └── README.md                   # Project README file with detailed documentation
+```
+
+3. **Run the Application** 🚀:
+```bash
+python main.py
+```
+## 🎮 User Interface Controls 🎮
+
+- **🟢 Start/Stop**: Toggle real-time monitoring.
+- **🎚️ Threshold Adjustment**: Fine-tune temperature sensitivity.
+- **🔴 Record**: Enable image capture for anomalies.
+- **📤 Upload**: Manually load a sample PCB image from the `sample_images` folder.
+- **📊 Results**: View the processed output with detected hotspots.
+- **📈 Graphs**: Visualize detection accuracy and thermal intensity over time.
+
+---
+
+## 🛠️ Project Structure & Details 🛠️
+
+| Directory           | Description 📑                                                                                         |
+|---------------------|--------------------------------------------------------------------------------------------------------|
+| `main.py`           | Contains the primary application code for the PCB Thermal Anomaly Detection System.                   |
+| `assets/`           | Folder for static assets including icons, images, and other visual elements.                           |
+| `sample_images/`    | Contains sample PCB images for uploading and testing.                                                  |
+| `anomaly_captures/` | Stores all captured images of detected anomalies.                                                      |
+| `images/`           | Contains screenshots and icons for the README.                                                         |
+
+---
+
+## 🎮 How to Use 🎮
+
+- **🟢 Start Monitoring**: Launches the thermal camera feed for real-time PCB analysis.
+- **🎚️ Adjust Threshold**: Increase or decrease the detection temperature threshold to match your analysis needs.
+- **📸 Automatic Capture**: When a hotspot is detected, an image is automatically saved in the `anomaly_captures` folder with the timestamp.
+- **📊 Graphs & Statistics**: Track real-time performance stats with dynamic visualizations.
+
+---
+
+## 📞 Contact Information 📞
+
+For any questions, suggestions, or collaboration inquiries, feel free to reach out:
+
+- **Email**: [manishdhatrak1121@gmail.com](mailto:manishdhatrak1121@gmail.com)
+- **LinkedIn**: [Manish Dhatrak](https://www.linkedin.com/in/manish-dhatrak-b759171aa/)
+- **GitHub**: [astromanu007](https://github.com/astromanu007)
+
+**Hope you find this tool useful for improving PCB quality control!** 😊✨
+
+---
+
+### 📢 License 📢
+
+This project is licensed under the **MIT License**. 📜 Feel free to use, modify, and distribute it as needed.
 
