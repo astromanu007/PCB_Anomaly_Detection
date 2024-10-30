@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PCB Anomaly Detection</title>
+</head>
+<body>
+    <h1>PCB Thermal Anomaly Detection</h1>
+    <div>
+        <h2>Live Feed</h2>
+        <img src="{{ url_for('video_feed') }}" width="640" height="480">
+    </div>
+    
+    <div>
+        <h2>Image Upload</h2>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".jpg,.jpeg">
+            <input type="submit" value="Upload and Analyze">
+        </form>
+    </div>
+    
+    {% if result_image %}
+    <div>
+        <h2>Analysis Result</h2>
+        <img src="{{ result_image }}" width="640" height="480">
+        <p>Maximum Temperature: {{ max_temp }}°C</p>
+        <p>Hot Spots Detected: {{ hot_spots_count }}</p>
+    </div>
+    {% endif %}
+</body>
+</html>
