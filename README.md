@@ -54,6 +54,20 @@ Welcome to the **PCB Thermal Anomaly Detection System**! This project allows for
     git clone https://github.com/astromanu007/PCB_Anomaly_Detection.git
     cd PCB_Anomaly_Detection
     ```
+### 2. Project Structure 📁
+```plaintext
+PCB_Anomaly_Detection/
+├── assets/                     # Folder for static assets like icons and images
+│   ├── thermal_icon.png
+│   └── creator_photo.jpg
+├── sample_images/              # Folder with sample PCB images for uploading
+├── anomaly_captures/           # Folder where captured anomalies are stored
+├── images/                     # Folder with screenshots for README
+│   ├── MAIN.jpg
+│   ├── INTRO.png
+│   ├── VIDEO_MODE.png
+│   ├── LIVE_TRACKING_RESULTS.png
+│   └── GRAPHS.jpg
+├── main.py                     # Main application code for running the PCB Thermal Anomaly Detection System
+└── README.md                   # Project README file with detailed documentation
 
-2. **Project Structure** 📁:
-   - Ensure the following file structure is set up:
